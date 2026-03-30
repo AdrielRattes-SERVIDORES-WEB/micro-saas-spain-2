@@ -14,8 +14,8 @@ export const articles = [
     slug: 'flotabilidad-neutra-buceo',
     title: 'Por qué la Flotabilidad Neutra es la Habilidad más Importante en Buceo',
     excerpt: 'Dominar la flotabilidad neutra reduce el consumo de aire hasta un 40% y protege los fondos marinos. Aprende la física, los errores más comunes y cómo practicarla en la piscina.',
-    image: 'https://images.unsplash.com/photo-1544551763-46a013bb7f44?w=1200&h=630&fit=crop&q=80',
-    imageAlt: 'Buceador practicando flotabilidad neutra en el Mediterráneo',
+    image: '/images/flotabilidad-neutra-buceo.png',
+    imageAlt: 'Buceador practicando flotabilidad neutra en arrecife de coral',
     publishedAt: '2026-03-01',
     faq: [
       { q: '¿Cuánto tiempo tarda en aprenderse la flotabilidad neutra?', a: 'Con práctica sistemática en piscina, la mayoría de buceadores notan una mejora clara en 3-5 sesiones dedicadas. El dominio completo llega con la experiencia de inmersión, normalmente entre 50 y 100 inmersiones.' },
