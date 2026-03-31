@@ -1,4 +1,4 @@
-name: Mirror to all repos
+name: Mirror to micro-saas-spain-2
 
 on:
   push:
@@ -14,12 +14,7 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Push to AdrielRattes/micro-saas-spain
-        run: |
-          git remote add adriel https://x-access-token:${{ secrets.MIRROR_TOKEN }}@github.com/AdrielRattes-SERVIDORES-WEB/micro-saas-spain.git
-          git push adriel main --force
-
       - name: Push to AdrielRattes/micro-saas-spain-2
         run: |
-          git remote add adriel2 https://x-access-token:${{ secrets.MIRROR_TOKEN }}@github.com/AdrielRattes-SERVIDORES-WEB/micro-saas-spain-2.git
-          git push adriel2 main --force
+          git remote add spain2 https://x-access-token:${{ secrets.MIRROR_TOKEN }}@github.com/AdrielRattes-SERVIDORES-WEB/micro-saas-spain-2.git
+          git push spain2 main --force
