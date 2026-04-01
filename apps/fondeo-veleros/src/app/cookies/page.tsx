@@ -1,7 +1,11 @@
 import type { Metadata } from 'next'
 import { appConfig } from '../content'
 
+const BASE_URL = `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL || 'localhost:3000'}`
+
+
 export const metadata: Metadata = {
+  alternates: { canonical: `${BASE_URL}/cookies` },
   title: 'Política de Cookies',
   description: `Información sobre el uso de cookies en ${appConfig.title}, incluyendo Google AdSense y Analytics.`,
   robots: { index: false, follow: false },

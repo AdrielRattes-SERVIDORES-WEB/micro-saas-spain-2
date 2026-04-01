@@ -1,7 +1,11 @@
 import type { Metadata } from 'next'
 import { appConfig } from '../content'
 
+const BASE_URL = `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL || 'localhost:3000'}`
+
+
 export const metadata: Metadata = {
+  alternates: { canonical: `${BASE_URL}/contacto` },
   title: 'Contacto',
   description: `Contacta con el equipo de ${appConfig.title} para preguntas, sugerencias o ejercer tus derechos de protección de datos.`,
 }

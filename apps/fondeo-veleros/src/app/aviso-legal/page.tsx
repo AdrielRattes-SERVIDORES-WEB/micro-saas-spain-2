@@ -1,7 +1,11 @@
 import type { Metadata } from 'next'
 import { appConfig } from '../content'
 
+const BASE_URL = `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL || 'localhost:3000'}`
+
+
 export const metadata: Metadata = {
+  alternates: { canonical: `${BASE_URL}/aviso-legal` },
   title: 'Aviso Legal',
   description: `Aviso legal de ${appConfig.title} conforme a la Ley 34/2002 de Servicios de la Sociedad de la Información (LSSI).`,
   robots: { index: false, follow: false },

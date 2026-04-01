@@ -1,7 +1,11 @@
 import type { Metadata } from 'next'
 import { appConfig } from '../content'
 
+const BASE_URL = `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL || 'localhost:3000'}`
+
+
 export const metadata: Metadata = {
+  alternates: { canonical: `${BASE_URL}/sobre-nosotros` },
   title: 'Sobre Nosotros',
   description: `Conoce el equipo detrás de ${appConfig.title}. Creamos herramientas de cálculo precisas para aficionados y profesionales en España.`,
 }

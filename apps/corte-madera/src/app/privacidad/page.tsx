@@ -1,7 +1,11 @@
 import type { Metadata } from 'next'
 import { appConfig } from '../content'
 
+const BASE_URL = `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL || 'localhost:3000'}`
+
+
 export const metadata: Metadata = {
+  alternates: { canonical: `${BASE_URL}/privacidad` },
   title: 'Política de Privacidad',
   description: `Política de privacidad de ${appConfig.title}. Información sobre el tratamiento de datos personales conforme al RGPD.`,
   robots: { index: false, follow: false },
