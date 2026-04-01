@@ -1,4 +1,3 @@
-'use client'
 import React from 'react'
 import { Footer } from '../components/Footer'
 
@@ -69,7 +68,7 @@ export function BlogFeedTemplate({
       <main className="max-w-5xl mx-auto px-4 py-12">
         <div className="flex items-center justify-between mb-8">
           <h2 className="text-2xl font-bold text-gray-900">Guías Técnicas</h2>
-          <span className="text-sm text-gray-500">5 artículos</span>
+          <span className="text-sm text-gray-500">{articles.length} artículos</span>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
