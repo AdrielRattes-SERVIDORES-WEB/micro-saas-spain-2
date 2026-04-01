@@ -24,6 +24,14 @@ export const metadata: Metadata = {
     googleBot: { index: true, follow: true },
   },
   alternates: { canonical: BASE_URL },
+  twitter: {
+    card: 'summary_large_image',
+    title: {
+      default: `${appConfig.title} | ${appConfig.tagline}`,
+      template: `%s | ${appConfig.title}`,
+    },
+    description: appConfig.description,
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
