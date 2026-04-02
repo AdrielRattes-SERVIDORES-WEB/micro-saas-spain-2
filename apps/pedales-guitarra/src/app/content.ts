@@ -24,6 +24,8 @@ export const articles = [
   },
   {
     slug: 'pedales-mayor-consumo',
+    image: '/blog/pedales-mayor-consumo.jpg',
+    imageAlt: 'pedales mayor consumo',
     title: 'Los Pedales que más Consumen: Digitales, Reverbs y Polyphonic',
     content: `<p>El consumo en mA varía enormemente según el tipo de pedal. Conocer los consumos típicos te ayuda a dimensionar la fuente antes de comprarla.</p><h4>Consumos típicos por tipo</h4><ul><li><strong>Overdrive/Distorsión analógico:</strong> 5-15mA (Boss DS-1: 3mA, Tube Screamer: 6mA)</li><li><strong>Compresor:</strong> 5-20mA</li><li><strong>Chorus/Flanger/Phaser analógico:</strong> 10-30mA</li><li><strong>Delay digital:</strong> 50-200mA (Boss DD-8: 85mA, Strymon Timeline: 300mA)</li><li><strong>Reverb digital:</strong> 100-300mA (Boss RV-6: 120mA, Strymon BigSky: 300mA)</li><li><strong>Looper:</strong> 100-400mA</li><li><strong>Pedales a 18V (Timmy, algunos Klon clones):</strong> El mismo consumo en mA pero el voltaje importa</li></ul><p>Los pedales Strymon son los reyes del consumo: BigSky, Timeline y Mobius cada uno consume ~300mA. Un pedalboard con los tres necesita al menos 1.000mA solo para ellos.</p>`,
   },
