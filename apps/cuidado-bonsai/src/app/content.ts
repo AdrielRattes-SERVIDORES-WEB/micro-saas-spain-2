@@ -40,6 +40,8 @@ export const articles = [
   },
   {
     slug: 'herramientas-bonsai-basicas',
+    image: '/blog/herramientas-bonsai-basicas.jpg',
+    imageAlt: 'herramientas bonsai basicas',
     title: 'Herramientas Básicas de Bonsái: Qué Comprar Primero en España',
     content: `<p>El mercado de herramientas de bonsái es enorme y puede ser abrumador. Para empezar, necesitas muy pocas herramientas pero deben ser de calidad aceptable.</p><h4>El kit mínimo indispensable</h4><ul><li><strong>Tijeras de poda (concave cutters):</strong> Para cortar ramas dejando una cicatriz cóncava que cierra limpiamente. ~20-40€ en acero inoxidable básico.</li><li><strong>Tijeras de hoja:</strong> Para pinzado de yemas y hojas finas. ~15-25€.</li><li><strong>Alicate de doblado:</strong> Para doblar ramas con alambre. ~20-30€.</li><li><strong>Palita de trasplante:</strong> Para mover tierra en el tiesto. ~10€.</li><li><strong>Alambre de aluminio:</strong> Rollo de 1mm, 2mm y 3mm. ~10-15€ el set.</li></ul><h4>Dónde comprar en España</h4><ul><li><strong>Bonsái Nexus (online):</strong> El mayor especialista español online.</li><li><strong>El Árbol del Maestro (Madrid):</strong> Tienda física con asesoramiento.</li><li><strong>Amazon España:</strong> Marcas Kaneshin y Tinyroots disponibles con envío rápido.</li></ul>`,
   },
