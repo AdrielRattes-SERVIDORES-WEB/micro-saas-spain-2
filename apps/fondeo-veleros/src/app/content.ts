@@ -26,6 +26,8 @@ export const articles = [
   },
   {
     slug: 'escopo-calculo-cadena',
+    image: '/blog/escopo-calculo-cadena.jpg',
+    imageAlt: 'escopo calculo cadena',
     title: 'El Escopo o Ratio de Fondeo: La Clave para no Garrar',
     content: `<p>El <strong>escopo</strong> (en inglés: scope) es la relación entre la longitud de la cadena/orinque soltada y la profundidad total (profundidad + altura del punto de fondeo en la proa). Es el factor más importante para que el ancla trabaje correctamente.</p><h4>Ratios recomendados por condición</h4><ul><li><strong>Tiempo calmado, ancla de día:</strong> 3:1 mínimo</li><li><strong>Condiciones normales:</strong> 5:1</li><li><strong>Viento 15-25 nudos:</strong> 7:1</li><li><strong>Temporal o fondeo de noche:</strong> 10:1 o más</li></ul><p>El escopo funciona porque cuanta más cadena sueltas, más horizontal es el ángulo de tracción sobre el ancla. Un ángulo horizontal permite que el ancla profundice; un ángulo vertical la arranca.</p><p>Con <strong>solo cadena</strong> (sin orinque de nylon), el peso de la cadena crea un arco catenario que absorbe tirones bruscos. Con orinque, la elasticidad del nylon hace la misma función.</p>`,
   },
