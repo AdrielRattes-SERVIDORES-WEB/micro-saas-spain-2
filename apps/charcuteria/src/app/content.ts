@@ -29,6 +29,8 @@ export const articles = [
   },
   {
     slug: 'proporciones-sal-charcuteria',
+    image: '/blog/proporciones-sal-charcuteria.jpg',
+    imageAlt: 'proporciones sal charcuteria',
     title: 'La Proporción Correcta de Sal para cada Tipo de Embutido',
     content: `
       <p>La cantidad de sal es el factor más importante en la charcutería. Demasiada poca y la carne se echa a perder; demasiada y el resultado es incomible. La clave está en el <strong>porcentaje sobre el peso de la carne</strong>.</p>
