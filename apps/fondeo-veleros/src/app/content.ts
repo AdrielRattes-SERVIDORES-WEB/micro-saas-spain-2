@@ -19,6 +19,8 @@ export const articles = [
   },
   {
     slug: 'fondear-correctamente',
+    image: '/blog/fondear-correctamente.jpg',
+    imageAlt: 'fondear correctamente',
     title: 'Cómo Fondear Correctamente: El Procedimiento Paso a Paso',
     content: `<p>Un fondeo mal ejecutado puede resultar en garreo (el ancla arrastra) durante la noche con consecuencias potencialmente graves. El procedimiento correcto es simple pero hay que seguirlo siempre.</p><h4>Procedimiento de fondeo seguro</h4><p><strong>1. Reconocimiento:</strong> Comprueba la carta náutica. Verifica profundidad, tipo de fondo y otras embarcaciones. Calcula el radio de giro necesario.</p><p><strong>2. Posicionamiento:</strong> Avanza al punto elegido, coloca la proa contra el viento o corriente, reduce a velocidad mínima.</p><p><strong>3. Fondeo:</strong> Para el barco, fondea el ancla, y empieza a soltar cadena mientras retrocedes lentamente. No dejes caer toda la cadena en el mismo punto.</p><p><strong>4. Tensado:</strong> Con toda la cadena fuera, da marcha atrás con motor hasta tensar el fondeo. El ancla debe clavarse.</p><p><strong>5. Verificación:</strong> Toma dos marcaciones visuales en tierra. Comprueba cada 30 minutos las primeras 2 horas.</p>`,
   },
