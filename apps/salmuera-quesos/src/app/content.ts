@@ -19,6 +19,8 @@ export const articles = [
   },
   {
     slug: 'quesos-espana-artesanales',
+    image: '/blog/quesos-espana-artesanales.jpg',
+    imageAlt: 'quesos espana artesanales',
     title: 'Los Quesos Artesanales más Elaborados en Casa en España',
     content: `<p>La tradición quesera española es extraordinariamente rica. Muchos de los quesos emblemáticos de nuestras regiones pueden elaborarse en casa con equipamiento básico.</p><h4>Quesos más populares para hacer en casa</h4><ul><li><strong>Queso fresco tipo Burgos:</strong> El más fácil. Listo en 24 horas. Sin maduración. Solo cuajo, leche y sal.</li><li><strong>Queso tipo Manchego joven:</strong> 30-60 días de maduración. Necesita prensado y control de humedad.</li><li><strong>Queso de cabra tipo Rulo:</strong> Con moho Penicillium candidum. Maduración 2-3 semanas.</li><li><strong>Idiazábal casero:</strong> Queso ahumado vasco. Técnicamente exigente pero alcanzable.</li><li><strong>Mató catalán:</strong> Requesón fresco. Sin maduración, listo en pocas horas.</li></ul>`,
   },
