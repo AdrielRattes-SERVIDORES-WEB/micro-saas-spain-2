@@ -46,6 +46,8 @@ export const articles = [
   },
   {
     slug: 'tiempos-secado-embutidos',
+    image: '/blog/tiempos-secado-embutidos.jpg',
+    imageAlt: 'tiempos secado embutidos',
     title: 'Tiempos de Secado y Maduración según el Tipo de Embutido',
     content: `
       <p>El secado es la fase más delicada de la charcutería. La temperatura, la humedad y el tiempo deben estar perfectamente controlados. En España, las condiciones climáticas varían enormemente entre regiones, lo que afecta directamente al proceso.</p>
