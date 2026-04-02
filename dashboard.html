@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Micro-SaaS Spain — Dashboard</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      background: #0f0f13;
+      color: #e2e8f0;
+      min-height: 100vh;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2.5rem;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 700;
+      color: #f8fafc;
+      letter-spacing: -0.5px;
+    }
+    header p {
+      color: #64748b;
+      margin-top: 0.4rem;
+      font-size: 0.9rem;
+    }
+    .stats-bar {
+      display: flex;
+      gap: 1.5rem;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+      flex-wrap: wrap;
+    }
+    .stat {
+      background: #1e1e2e;
+      border: 1px solid #2a2a3e;
+      border-radius: 12px;
+      padding: 1rem 1.8rem;
+      text-align: center;
+    }
+    .stat .value {
+      font-size: 2rem;
+      font-weight: 800;
+      color: #818cf8;
+    }
+    .stat .label {
+      font-size: 0.78rem;
+      color: #64748b;
+      margin-top: 0.2rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1rem;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+    .card {
+      background: #1e1e2e;
+      border: 1px solid #2a2a3e;
+      border-radius: 14px;
+      padding: 1.2rem 1.4rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.8rem;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+    .card:hover {
+      border-color: #4f46e5;
+      transform: translateY(-2px);
+    }
+    .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .app-name {
+      font-weight: 600;
+      font-size: 0.95rem;
+      color: #f1f5f9;
+    }
+    .badge {
+      font-size: 0.78rem;
+      font-weight: 700;
+      padding: 0.2rem 0.6rem;
+      border-radius: 99px;
+    }
+    .badge-high   { background: #14532d; color: #4ade80; }
+    .badge-medium { background: #1e3a5f; color: #60a5fa; }
+    .badge-low    { background: #292524; color: #94a3b8; }
+    .bar-bg {
+      background: #2a2a3e;
+      border-radius: 99px;
+      height: 6px;
+      overflow: hidden;
+    }
+    .bar-fill {
+      height: 100%;
+      border-radius: 99px;
+      transition: width 0.6s ease;
+    }
+    .bar-high   { background: linear-gradient(90deg, #4ade80, #22c55e); }
+    .bar-medium { background: linear-gradient(90deg, #60a5fa, #3b82f6); }
+    .bar-low    { background: linear-gradient(90deg, #94a3b8, #64748b); }
+    .card-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .article-count {
+      font-size: 0.8rem;
+      color: #64748b;
+    }
+    .article-count span {
+      color: #cbd5e1;
+      font-weight: 600;
+    }
+    .link {
+      font-size: 0.75rem;
+      color: #6366f1;
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      gap: 0.3rem;
+      transition: color 0.2s;
+    }
+    .link:hover { color: #818cf8; }
+    .updated {
+      text-align: center;
+      margin-top: 2rem;
+      font-size: 0.75rem;
+      color: #334155;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>🇪🇸 Micro-SaaS Spain</h1>
+  <p>Visão geral dos 15 blogs ativos</p>
+</header>
+
+<div class="stats-bar">
+  <div class="stat">
+    <div class="value" id="total-apps">15</div>
+    <div class="label">Apps ativos</div>
+  </div>
+  <div class="stat">
+    <div class="value" id="total-articles">—</div>
+    <div class="label">Total artigos</div>
+  </div>
+  <div class="stat">
+    <div class="value" id="avg-articles">—</div>
+    <div class="label">Média por app</div>
+  </div>
+  <div class="stat">
+    <div class="value" id="max-articles">—</div>
+    <div class="label">Máximo</div>
+  </div>
+</div>
+
+<div class="grid" id="grid"></div>
+<div class="updated" id="updated"></div>
+
+<script>
+const apps = [
+  { slug: 'lastro-buceo',       name: 'Lastro Buceo',         articles: 15, url: 'https://saas-lastro-buceo.vercel.app' },
+  { slug: 'impresion-3d',       name: 'Impresión 3D',         articles: 10, url: 'https://saas-impresion-3d.vercel.app' },
+  { slug: 'corte-madera',       name: 'Corte de Madera',      articles: 10, url: 'https://saas-corte-madera.vercel.app' },
+  { slug: 'resina-epoxi',       name: 'Resina Epoxi',         articles: 10, url: 'https://saas-resina-epoxi.vercel.app' },
+  { slug: 'aceitunas',          name: 'Aceitunas',            articles:  5, url: 'https://saas-aceitunas.vercel.app' },
+  { slug: 'astrofotografia',    name: 'Astrofotografía',      articles:  5, url: 'https://saas-astrofotografia.vercel.app' },
+  { slug: 'camper-electrica',   name: 'Camper Eléctrica',     articles:  5, url: 'https://saas-camper-electrica.vercel.app' },
+  { slug: 'charcuteria',        name: 'Charcutería',          articles:  5, url: 'https://saas-charcuteria.vercel.app' },
+  { slug: 'cuidado-bonsai',     name: 'Cuidado Bonsái',       articles:  5, url: 'https://saas-cuidado-bonsai.vercel.app' },
+  { slug: 'fondeo-veleros',     name: 'Fondeo Veleros',       articles:  5, url: 'https://saas-fondeo-veleros.vercel.app' },
+  { slug: 'marroquineria',      name: 'Marroquinería',        articles:  5, url: 'https://saas-marroquineria.vercel.app' },
+  { slug: 'mezcla-tintas',      name: 'Mezcla de Tintas',     articles:  5, url: 'https://saas-mezcla-tintas.vercel.app' },
+  { slug: 'pedales-guitarra',   name: 'Pedales Guitarra',     articles:  5, url: 'https://saas-pedales-guitarra.vercel.app' },
+  { slug: 'perfumeria-botanica',name: 'Perfumería Botánica',  articles:  5, url: 'https://saas-perfumeria-botanica.vercel.app' },
+  { slug: 'salmuera-quesos',    name: 'Salmuera Quesos',      articles:  5, url: 'https://saas-salmuera-quesos.vercel.app' },
+];
+
+const MAX = Math.max(...apps.map(a => a.articles));
+const total = apps.reduce((s, a) => s + a.articles, 0);
+const avg = (total / apps.length).toFixed(1);
+
+document.getElementById('total-articles').textContent = total;
+document.getElementById('avg-articles').textContent = avg;
+document.getElementById('max-articles').textContent = MAX;
+
+function tier(n) {
+  if (n >= 12) return 'high';
+  if (n >= 8)  return 'medium';
+  return 'low';
+}
+
+function label(n) {
+  if (n >= 12) return '🔥 Top';
+  if (n >= 8)  return '📈 Crescendo';
+  return '🌱 Base';
+}
+
+const grid = document.getElementById('grid');
+// Sort by articles desc
+[...apps].sort((a,b) => b.articles - a.articles).forEach(app => {
+  const t = tier(app.articles);
+  const pct = Math.round((app.articles / MAX) * 100);
+  grid.innerHTML += `
+    <div class="card">
+      <div class="card-top">
+        <span class="app-name">${app.name}</span>
+        <span class="badge badge-${t}">${label(app.articles)}</span>
+      </div>
+      <div class="bar-bg">
+        <div class="bar-fill bar-${t}" style="width:${pct}%"></div>
+      </div>
+      <div class="card-footer">
+        <span class="article-count"><span>${app.articles}</span> artigos</span>
+        <a class="link" href="${app.url}" target="_blank">
+          Ver site ↗
+        </a>
+      </div>
+    </div>`;
+});
+
+document.getElementById('updated').textContent =
+  'Atualizado em ' + new Date().toLocaleDateString('pt-BR', { day:'2-digit', month:'long', year:'numeric', hour:'2-digit', minute:'2-digit' });
+</script>
+</body>
+</html>
