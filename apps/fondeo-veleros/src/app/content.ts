@@ -33,6 +33,8 @@ export const articles = [
   },
   {
     slug: 'fondear-posidonia-baleares',
+    image: '/blog/fondear-posidonia-baleares.jpg',
+    imageAlt: 'fondear posidonia baleares',
     title: 'Fondear en Posidonia en Baleares: Normativa y Alternativas Legales',
     content: `<p>La posidonia oceánica (<em>Posidonia oceanica</em>) es una planta marina endémica del Mediterráneo declarada Patrimonio Natural. En España, <strong>fondear sobre posidonia está prohibido en casi todas las zonas de Baleares y el litoral catalán</strong> bajo severas multas.</p><h4>Normativa vigente en España</h4><ul><li>Fondear sobre posidonia puede generar multas de hasta <strong>10.000€</strong> bajo la Ley de Costas y normativas autonómicas de Baleares (BOIB).</li><li>En Cabrera, Ses Salines y Cap de Formentor el fondeo está completamente prohibido excepto en boyas ecológicas.</li></ul><h4>Cómo identificar la posidonia</h4><p>La posidonia aparece en carta náutica como fondo de hierba/alga. En el agua, se ve como una pradera verde oscura continua a 2-40m de profundidad. El ancla que cae sobre ella se clava difícilmente, y si lo hace, destroza la planta.</p><h4>Alternativas</h4><ul><li>Usar las boyas ecológicas instaladas en zonas protegidas (gratuitas o de bajo coste)</li><li>Fondear en arena en las caletas adyacentes</li><li>Usar anclas de menor daño (Fortress o Manson) que penetran más en los huecos de arena</li></ul>`,
   },
