@@ -19,6 +19,8 @@ export const articles = [
   },
   {
     slug: 'sustrato-bonsai-espana',
+    image: '/blog/sustrato-bonsai-espana.jpg',
+    imageAlt: 'sustrato bonsai espana',
     title: 'El Sustrato Correcto para Bonsái en España: Akadama, Pumita y Kiryu',
     content: `<p>El sustrato es el factor que más impacta en la salud a largo plazo de un bonsái. La tierra de jardín convencional es completamente inadecuada: compacta con los riegos, ahoga las raíces y no permite el drenaje correcto.</p><h4>Componentes del sustrato profesional</h4><ul><li><strong>Akadama:</strong> Arcilla volcánica japonesa. Retiene agua y nutrientes pero drena bien. Precio España: ~15-20€/litro. Se deshace en 2-3 años y hay que reponer.</li><li><strong>Pumita (Pumice):</strong> Roca volcánica triturada. Excelente drenaje y aireación. Inerte, no aporta nutrientes. ~8-12€/litro.</li><li><strong>Kiryu:</strong> Arena volcánica de grano grueso. Similar a pumita. Muy usada en Japón.</li><li><strong>Grava de cuarzo lavada:</strong> Alternativa económica española (~3-5€/kg en viveros).</li></ul><h4>Mezclas según el clima español</h4><ul><li><strong>Zonas secas (Madrid, Castilla, Extremadura):</strong> 60% Akadama + 20% Pumita + 20% Kiryu</li><li><strong>Zonas húmedas (Galicia, Asturias):</strong> 40% Akadama + 40% Pumita + 20% Kiryu</li></ul>`,
   },
