@@ -26,6 +26,8 @@ export const articles = [
   },
   {
     slug: 'riego-bonsai-verano-espana',
+    image: '/blog/riego-bonsai-verano-espana.jpg',
+    imageAlt: 'riego bonsai verano espana',
     title: 'Riego en Verano en España: El Mayor Reto del Bonsái en Climas Cálidos',
     content: `<p>El verano español es el mayor enemigo del bonsái no aclimatado. En Sevilla, Córdoba o Madrid, las temperaturas de 38-42°C pueden secar completamente un bonsái pequeño en pocas horas de sol directo.</p><h4>Estrategias de supervivencia estival</h4><ul><li><strong>Riego doble:</strong> En pleno verano, algunos bonsáis de exterior necesitan riego mañana y tarde.</li><li><strong>Riel de media sombra:</strong> Protege del sol de mediodía (12h-17h) sin quitar la luz matutina.</li><li><strong>Bandeja de agua:</strong> Poner el bonsái sobre una bandeja con grava húmeda aumenta la humedad local sin encharcar las raíces.</li><li><strong>Microclima:</strong> Agrupa los bonsáis juntos — la evapotranspiración colectiva crea un microclima más fresco.</li></ul><p>Señal de alerta: hojas enrolladas hacia dentro = estrés hídrico severo. Riega inmediatamente sumergiéndolo en agua 2-3 minutos.</p>`,
   },
