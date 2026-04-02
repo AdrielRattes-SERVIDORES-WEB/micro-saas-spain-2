@@ -19,6 +19,8 @@ export const articles = [
   },
   {
     slug: 'herramientas-basicas-marroquineria',
+    image: '/blog/herramientas-basicas-marroquineria.jpg',
+    imageAlt: 'herramientas basicas marroquineria',
     title: 'Herramientas Básicas para Empezar en Marroquinería',
     content: `<p>Para empezar en marroquinería no necesitas invertir 500€ desde el primer día. Hay un kit mínimo que cubre el 80% de los proyectos básicos:</p><h4>Kit inicial (inversión: 80-120€)</h4><ul><li><strong>Tabla de corte:</strong> HDPE o mármol, imprescindible</li><li><strong>Cúter rotativo + regla metálica:</strong> Para cortes rectos perfectos</li><li><strong>Punzón de agujeros (pricking iron):</strong> 3-4mm de separación, el más versátil</li><li><strong>Agujas para cuero x2:</strong> Siempre trabaja con dos para costuras tipo sellero</li><li><strong>Hilo encerado:</strong> Lin-Cable o Tiger Thread, grosor 0.8mm</li><li><strong>Pegamento de contacto (Renia Colle de Cologne):</strong> El estándar en España</li><li><strong>Biselador de bordes n°2:</strong> Para acabados limpios</li></ul>`,
   },
