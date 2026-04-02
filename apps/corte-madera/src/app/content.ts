@@ -12,6 +12,7 @@ export const appConfig = {
 export const articles = [
   {
     slug: 'tipos-tableros-mdf-carpinteria',
+    publishedAt: '2026-02-01',
     image: '/blog/tipos-tableros-mdf-carpinteria.jpg',
     imageAlt: 'Workers in a workshop with stacked materials.',
     title: 'MDF, DM, Contrachapado y Melamina: Cuál Elegir para cada Proyecto',

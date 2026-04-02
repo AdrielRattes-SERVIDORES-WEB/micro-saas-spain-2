@@ -12,6 +12,7 @@ export const appConfig = {
 export const articles = [
   {
     slug: 'instalacion-12v-peligrosa',
+    publishedAt: '2026-02-01',
     image: '/blog/instalacion-12v-peligrosa.jpg',
     imageAlt: 'Poorly installed electrical wires inside a camper van',
     title: 'Por qué la Instalación 12V en una Camper puede ser Peligrosa',

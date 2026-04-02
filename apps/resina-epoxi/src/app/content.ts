@@ -12,6 +12,7 @@ export const appConfig = {
 export const articles = [
   {
     slug: 'que-es-resina-epoxi-mesas',
+    publishedAt: '2026-02-01',
     image: '/blog/que-es-resina-epoxi-mesas.jpg',
     imageAlt: 'an aerial view of a river flowing through a valley',
     title: '¿Qué es la Resina Epoxi y para qué sirve en Mesas de Río?',

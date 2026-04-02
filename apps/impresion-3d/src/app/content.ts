@@ -12,6 +12,7 @@ export const appConfig = {
 export const articles = [
   {
     slug: 'tramos-luz-espana-pvpc',
+    publishedAt: '2026-02-01',
     image: '/blog/tramos-luz-espana-pvpc.jpg',
     imageAlt: 'A close up of a clock on a wall',
     title: 'Los Tramos de Luz en España (PVPC): Cuándo Imprimir para Pagar Menos',
