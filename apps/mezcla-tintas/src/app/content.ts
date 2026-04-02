@@ -12,6 +12,8 @@ export const appConfig = {
 export const articles = [
   {
     slug: 'teoria-color-cmyk-modelismo',
+    image: '/blog/teoria-color-cmyk-modelismo.jpg',
+    imageAlt: 'teoria color cmyk modelismo',
     title: 'CMYK vs RGB: La Teoría del Color que Todo Modelista Debe Conocer',
     content: `<p>Los monitores usan luz (modelo RGB), pero las pinturas mezclan pigmentos (modelo CMYK). Esta diferencia fundamental explica por qué el color que ves en pantalla nunca es exactamente el que obtienes al mezclar pinturas.</p><p>En el modelo <strong>sustractivo CMYK</strong> (Cyan, Magenta, Yellow, Key/Black), cada color absorbe ciertas longitudes de onda de la luz. Al mezclarlos, vas "restando" luz, lo que da colores más oscuros.</p><h4>La regla de las mezclas básicas</h4><ul><li>Cyan + Magenta = Violeta/Púrpura</li><li>Cyan + Yellow = Verde</li><li>Magenta + Yellow = Naranja/Rojo</li><li>Cyan + Magenta + Yellow = Negro (teórico, en práctica marrón sucio)</li></ul><p>Por eso el negro real (Key) se añade como color separado en CMYK: da negros más profundos y permite reducir el consumo de los tres pigmentos principales.</p>`,
   },
