@@ -12,6 +12,8 @@ export const appConfig = {
 export const articles = [
   {
     slug: 'bonsai-diferente-otras-plantas',
+    image: '/blog/bonsai-diferente-otras-plantas.jpg',
+    imageAlt: 'bonsai diferente otras plantas',
     title: 'Por qué el Bonsái es Diferente a Cualquier Otra Planta de Interior',
     content: `<p>El bonsái no es una planta de interior decorativa. Es un árbol en miniatura que replica las mismas necesidades que tendría en la naturaleza: luz solar directa, ciclos estacionales y riegos adaptados al clima.</p><p>El error más común en España es tratar un bonsái como una planta de interior. La mayoría de las especies de bonsái más vendidas (Juniperus, Pinus, Zelkova) son <strong>árboles de exterior que necesitan pleno sol y frío invernal</strong>. Meterlos en casa los mata lentamente.</p><h4>Bonsáis de interior vs exterior en España</h4><ul><li><strong>Interior (temperatura constante):</strong> Ficus retusa, Carmona retusa, Serissa foetida, Schefflera</li><li><strong>Exterior obligatorio:</strong> Juniperus, Pinus, Zelkova, Acer palmatum, Prunus, Olivo</li></ul><p>La regla simple: si la especie da flores o frutos comestibles en la naturaleza (olivo, manzano, granado), necesita el frío invernal para florecer al año siguiente.</p>`,
   },
