@@ -12,6 +12,8 @@ export const appConfig = {
 export const articles = [
   {
     slug: 'sal-nitro-charcuteria',
+    image: '/blog/sal-nitro-charcuteria.jpg',
+    imageAlt: 'sal nitro charcuteria',
     title: '¿Qué es la Sal de Cura y por qué es Obligatoria en Charcutería?',
     content: `
       <p>La <strong>sal de cura</strong> (también llamada sal nitro o Prague Powder) es la diferencia entre un embutido seguro y uno potencialmente peligroso. Contiene nitrito sódico (NaNO₂) al 6,25%, un conservante que inhibe el crecimiento de <em>Clostridium botulinum</em>, la bacteria responsable del botulismo.</p>
