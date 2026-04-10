@@ -1,0 +1,16 @@
+name: Ping Supabase
+
+on:
+  schedule:
+    - cron: '0 8 */6 * *'
+  workflow_dispatch:
+
+jobs:
+  ping-supabase:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Ping Supabase
+        run: |
+          STATUS=$(curl -s -o /dev/null -w "%{http_code}"             "https://ohvtijijsqjkdbpcdgud.supabase.co/rest/v1/purchases?limit=1"             -H "apikey: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im9odnRpamlqc3Fqa2RicGNkZ3VkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NzQ5MjY1NDksImV4cCI6MjA5MDUwMjU0OX0.IcfzME9BpXlDAGgh1F31VO33oGCIqY-BMkxioet3XQM")
+          echo "Supabase status: $STATUS"
+
