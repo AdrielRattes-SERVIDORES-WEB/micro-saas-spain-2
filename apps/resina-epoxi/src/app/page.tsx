@@ -193,6 +193,8 @@ const schemaItemList = {
 const featuredArticles = [
   {
     slug: 'cuanta-resina-necesito-mesa-rio',
+    image: '/blog/cuanta-resina-necesito-mesa-rio.jpg',
+    imageAlt: 'Cálculo de cantidad de resina epoxi para mesa de río',
     category: 'CÁLCULO',
     categoryColor: 'bg-blue-100 text-blue-700',
     title: '¿Cuánta Resina Epoxi Necesito para mi Mesa de Río? Cálculo Exacto',
@@ -201,6 +203,8 @@ const featuredArticles = [
   },
   {
     slug: 'proporcion-ab-resina',
+    image: '/blog/proporcion-ab-resina.jpg',
+    imageAlt: 'Proporción A:B correcta en resina epoxi',
     category: 'TÉCNICA',
     categoryColor: 'bg-green-100 text-green-700',
     title: 'Proporción A:B Correcta y por qué NO puedes aproximarla',
@@ -209,6 +213,8 @@ const featuredArticles = [
   },
   {
     slug: 'evitar-burbujas-resina-epoxi-guia-expertos',
+    image: '/blog/evitar-burbujas-resina-epoxi-guia-expertos.jpg',
+    imageAlt: 'Cómo evitar burbujas en resina epoxi',
     category: 'ERRORES',
     categoryColor: 'bg-red-100 text-red-700',
     title: 'Cómo Evitar Burbujas en la Resina Epoxi: Guía Definitiva',
@@ -217,6 +223,8 @@ const featuredArticles = [
   },
   {
     slug: 'calcular-volumen-exacto-resina-epoxi-mesas-rio',
+    image: '/blog/calcular-volumen-exacto-resina-epoxi-mesas-rio.jpg',
+    imageAlt: 'Calcular volumen exacto de resina epoxi para mesas de río',
     category: 'CÁLCULO',
     categoryColor: 'bg-blue-100 text-blue-700',
     title: 'Cómo Calcular el Volumen Exacto de Resina Epoxi para Mesas de Río',
@@ -225,6 +233,8 @@ const featuredArticles = [
   },
   {
     slug: 'reaccion-exotermica-temperatura-curado-resina-epoxi',
+    image: '/blog/reaccion-exotermica-temperatura-curado-resina-epoxi.jpg',
+    imageAlt: 'Reacción exotérmica en resina epoxi',
     category: 'TÉCNICA',
     categoryColor: 'bg-green-100 text-green-700',
     title: 'Reacción Exotérmica: Por Qué tu Resina Hierve y Cómo Evitarlo',
@@ -233,6 +243,8 @@ const featuredArticles = [
   },
   {
     slug: 'lijado-pulido-epoxi',
+    image: '/blog/lijado-pulido-epoxi.jpg',
+    imageAlt: 'Lijar y pulir resina epoxi acabado espejo',
     category: 'ACABADOS',
     categoryColor: 'bg-purple-100 text-purple-700',
     title: 'Cómo Lijar y Pulir Resina Epoxi hasta conseguir Espejo',
@@ -264,7 +276,7 @@ export default function Page() {
               Guías gratis
             </Link>
             <Link
-              href="/checkout"
+              href="/dashboard"
               className="bg-amber-400 hover:bg-amber-300 text-gray-900 font-bold text-sm px-4 py-2 rounded-lg transition-colors"
             >
               📊 Usar Calculadora
@@ -420,10 +432,10 @@ export default function Page() {
                 },
               ].map((step) => (
                 <div key={step.num} className="text-center">
-                  <div className="text-7xl font-extrabold text-gray-100 mb-2 leading-none select-none">
+                  <div className="text-8xl font-extrabold text-gray-300 mb-0 leading-none select-none tracking-tight">
                     {step.num}
                   </div>
-                  <h3 className="text-lg font-bold text-gray-900 mb-2">{step.title}</h3>
+                  <h3 className="text-lg font-bold text-gray-900 mb-2 -mt-2">{step.title}</h3>
                   <p className="text-gray-600 text-sm leading-relaxed">{step.desc}</p>
                 </div>
               ))}
@@ -440,60 +452,68 @@ export default function Page() {
             Diseñada para carpinteros que hacen mesas de río en España. Sin aproximaciones.
           </p>
           <div className="grid md:grid-cols-3 gap-6">
-            {[
-              {
-                icon: '⚖️',
-                title: 'Peso exacto de resina',
-                desc: 'Calcula los kg precisos aplicando la densidad real de la resina, no estimaciones por volumen.',
-              },
-              {
-                icon: '🧪',
-                title: 'Proporción A:B automática',
-                desc: 'Gramos exactos de resina y endurecedor según la proporción de tu fabricante.',
-              },
-              {
-                icon: '📏',
-                title: 'Cálculo por capas',
-                desc: 'Divide automáticamente en capas según el grosor máximo por vertido de tu resina.',
-              },
-              {
-                icon: '💶',
-                title: 'Coste total estimado',
-                desc: 'Introduce el precio por kg de tu resina y obtén el coste total antes de comprar.',
-              },
-              {
-                icon: '🌡️',
-                title: 'Ajuste por temperatura',
-                desc: 'Corrección automática del cálculo según la temperatura actual del taller.',
-              },
-              {
-                icon: '📦',
-                title: 'Merma incluida',
-                desc: 'Añade el porcentaje de desperdicio recomendado para no quedarte corto de resina.',
-              },
-            ].map((feat) => (
-              <div
-                key={feat.title}
-                className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow"
-              >
-                <div className="text-3xl mb-3" aria-hidden="true">{feat.icon}</div>
-                <h3 className="font-bold text-gray-900 mb-2">{feat.title}</h3>
-                <p className="text-gray-600 text-sm leading-relaxed">{feat.desc}</p>
-              </div>
-            ))}
+            {/* Peso exacto */}
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <svg className="w-7 h-7 text-[#1a3a5c] mb-3" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 3c.552 0 1 .448 1 1s-.448 1-1 1-1-.448-1-1 .448-1 1-1zm0 2l-3.5 7h7L12 5zM4.5 12h15M7 12l-2 9h14l-2-9" />
+              </svg>
+              <h3 className="font-bold text-gray-900 mb-2">Peso exacto de resina</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Calcula los kg precisos aplicando la densidad real de la resina, no estimaciones por volumen.</p>
+            </div>
+            {/* Proporción A:B */}
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <svg className="w-7 h-7 text-[#1a3a5c] mb-3" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 9h16.5m-16.5 6.75h16.5M9 3.75v16.5M15 3.75v16.5" />
+              </svg>
+              <h3 className="font-bold text-gray-900 mb-2">Proporción A:B automática</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Gramos exactos de resina y endurecedor según la proporción de tu fabricante.</p>
+            </div>
+            {/* Capas */}
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <svg className="w-7 h-7 text-[#1a3a5c] mb-3" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6.429 9.75 2.25 12l4.179 2.25m0-4.5 5.571 3 5.571-3m-11.142 0L2.25 7.5 12 2.25l9.75 5.25-4.179 2.25m0 0L21.75 12l-4.179 2.25m0 0 4.179 2.25L12 21.75 2.25 16.5l4.179-2.25m11.142 0-5.571 3-5.571-3" />
+              </svg>
+              <h3 className="font-bold text-gray-900 mb-2">Cálculo por capas</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Divide automáticamente en capas según el grosor máximo por vertido de tu resina.</p>
+            </div>
+            {/* Coste */}
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <svg className="w-7 h-7 text-[#1a3a5c] mb-3" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M14.25 7.756a4.5 4.5 0 1 0 0 8.488M7.5 10.5h5.25m-5.25 3h5.25M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z" />
+              </svg>
+              <h3 className="font-bold text-gray-900 mb-2">Coste total estimado</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Introduce el precio por kg de tu resina y obtén el coste total antes de comprar.</p>
+            </div>
+            {/* Temperatura */}
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <svg className="w-7 h-7 text-[#1a3a5c] mb-3" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.362 5.214A8.252 8.252 0 0 1 12 21 8.25 8.25 0 0 1 6.038 7.047 8.287 8.287 0 0 0 9 9.601a8.983 8.983 0 0 1 3.361-6.867 8.21 8.21 0 0 0 3 2.48Z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M12 18a3.75 3.75 0 0 0 .495-7.468 5.99 5.99 0 0 0-1.925 3.547 5.975 5.975 0 0 1-2.133-1.001A3.75 3.75 0 0 0 12 18Z" />
+              </svg>
+              <h3 className="font-bold text-gray-900 mb-2">Ajuste por temperatura</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Corrección automática del cálculo según la temperatura actual del taller.</p>
+            </div>
+            {/* Merma */}
+            <div className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow">
+              <svg className="w-7 h-7 text-[#1a3a5c] mb-3" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" d="m20.25 7.5-.625 10.632a2.25 2.25 0 0 1-2.247 2.118H6.622a2.25 2.25 0 0 1-2.247-2.118L3.75 7.5M10 11.25h4M3.375 7.5h17.25c.621 0 1.125-.504 1.125-1.125v-1.5c0-.621-.504-1.125-1.125-1.125H3.375c-.621 0-1.125.504-1.125 1.125v1.5c0 .621.504 1.125 1.125 1.125Z" />
+              </svg>
+              <h3 className="font-bold text-gray-900 mb-2">Merma incluida</h3>
+              <p className="text-gray-600 text-sm leading-relaxed">Añade el porcentaje de desperdicio recomendado para no quedarte corto de resina.</p>
+            </div>
           </div>
         </section>
 
         {/* ── MID CTA ── */}
-        <section className="bg-amber-50 border-y border-amber-100 px-6 py-14 text-center">
+        <section className="bg-[#1a3a5c] px-6 py-16 text-center text-white">
           <div className="max-w-2xl mx-auto">
-            <p className="text-gray-500 text-sm uppercase tracking-widest font-semibold mb-3">
+            <p className="text-blue-300 text-sm uppercase tracking-widest font-semibold mb-3">
               Herramienta profesional
             </p>
-            <h2 className="text-2xl md:text-3xl font-extrabold text-gray-900 mb-4">
+            <h2 className="text-2xl md:text-3xl font-extrabold text-white mb-4">
               Deja de estimar a ojo. Compra exactamente lo que necesitas.
             </h2>
-            <p className="text-gray-600 mb-8">
+            <p className="text-blue-200 mb-8">
               El error de cálculo más común en mesas de río es comprar resina de más o de menos.
               Con nuestra calculadora obtienes el número exacto antes de gastar dinero.
             </p>
@@ -501,9 +521,9 @@ export default function Page() {
               href="/checkout"
               className="inline-block bg-amber-400 hover:bg-amber-300 text-gray-900 font-extrabold text-lg px-8 py-4 rounded-xl shadow-lg transition-all hover:scale-105"
             >
-              💳 Obtener Acceso Pro — 4,99€
+              Obtener Acceso Pro — 4,99€
             </Link>
-            <p className="text-gray-400 text-sm mt-4">Pago único · Sin suscripción · Acceso de por vida</p>
+            <p className="text-blue-400 text-sm mt-4">Pago único · Sin suscripción · Acceso de por vida</p>
           </div>
         </section>
 
@@ -519,21 +539,34 @@ export default function Page() {
             {featuredArticles.map((article) => (
               <article
                 key={article.slug}
-                className="bg-white border border-gray-100 rounded-2xl p-6 shadow-sm hover:shadow-md transition-shadow flex flex-col"
+                className="bg-white border border-gray-100 rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow flex flex-col"
               >
-                <span className={`text-xs font-bold px-2 py-1 rounded-full self-start mb-4 ${article.categoryColor}`}>
-                  {article.category}
-                </span>
-                <h3 className="font-bold text-gray-900 mb-3 leading-snug flex-1">
-                  {article.title}
-                </h3>
-                <p className="text-gray-500 text-sm mb-4 leading-relaxed">{article.excerpt}</p>
-                <Link
-                  href={`/blog/${article.slug}`}
-                  className="text-[#1a3a5c] font-semibold text-sm hover:text-amber-600 transition-colors"
-                >
-                  Leer artículo →
+                <Link href={`/blog/${article.slug}`} className="block overflow-hidden">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src={article.image}
+                    alt={article.imageAlt}
+                    width={600}
+                    height={340}
+                    className="w-full h-44 object-cover hover:scale-105 transition-transform duration-300"
+                    loading="lazy"
+                  />
                 </Link>
+                <div className="p-6 flex flex-col flex-1">
+                  <span className={`text-xs font-bold px-2 py-1 rounded-full self-start mb-3 ${article.categoryColor}`}>
+                    {article.category}
+                  </span>
+                  <h3 className="font-bold text-gray-900 mb-3 leading-snug flex-1">
+                    {article.title}
+                  </h3>
+                  <p className="text-gray-500 text-sm mb-4 leading-relaxed">{article.excerpt}</p>
+                  <Link
+                    href={`/blog/${article.slug}`}
+                    className="text-[#1a3a5c] font-semibold text-sm hover:text-amber-600 transition-colors"
+                  >
+                    Leer artículo →
+                  </Link>
+                </div>
               </article>
             ))}
           </div>
