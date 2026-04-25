@@ -69,13 +69,13 @@ export const articles = [
         <span style="color:#f59e0b;font-size:15px">★★★★★</span>
         <span style="font-size:13px;color:#6b7280">4.5/5 · 2.333 valoraciones</span>
       </div>
-      <ul style="margin:4px 0 0 0;padding-left:18px;font-size:13px;color:#374151;line-height:1.8">
-        <li>Pré-mezclada · sin componente B</li>
-        <li>Cura en 2–4 min bajo lámpara UV</li>
-        <li>Viscosidad 2000 cps · autodesgaseificante</li>
-        <li>Resistente al amarilleamiento · dureza 85D</li>
-        <li>Incluye vasos, varillas, guantes y tapete</li>
-      </ul>
+      <div style="margin:8px 0;display:flex;flex-direction:column;gap:5px;font-size:13px;color:#374151">
+        <div>✓ Premezclada · sin componente B</div>
+        <div>✓ Cura en 2–4 min bajo lámpara UV</div>
+        <div>✓ Viscosidad 2000 cps · autodesgaseificante</div>
+        <div>✓ Resistente al amarilleamiento · dureza 85D</div>
+        <div>✓ Incluye vasos, varillas, guantes y tapete</div>
+      </div>
       <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:12px;border-top:1px solid #f3f4f6;flex-wrap:wrap;gap:8px">
         <div>
           <span style="font-size:22px;font-weight:800;color:#1a3a5c">112,66€</span>

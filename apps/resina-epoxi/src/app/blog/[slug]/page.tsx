@@ -88,15 +88,13 @@ export default function BlogPostPage({ params }: Props) {
     ],
   }
 
-  const faqLd = faqs.length > 0
-    ? { '@context': 'https://schema.org', '@type': 'FAQPage', mainEntity: faqs }
-    : null
+  // FAQPage not emitted as separate JSON-LD to avoid RSC hydration duplication
+  // Google extracts FAQ from structured h3+p HTML directly
 
   return (
     <>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(blogPostingLd) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
-      {faqLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqLd) }} />}
       <BlogPostTemplate
         {...appConfig}
         article={article}
