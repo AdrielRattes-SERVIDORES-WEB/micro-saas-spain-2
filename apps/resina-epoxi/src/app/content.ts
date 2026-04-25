@@ -19,6 +19,64 @@ export const articles = [
     excerpt: 'Descubre las diferencias clave entre resina UV y resina epoxi A+B: tiempos de curado, usos, limitaciones y cuál es la mejor opción para tu proyecto.',
     content: `<h2>Resina UV y Resina Epoxi A+B: No Son lo Mismo</h2>
 <p>En el mercado español de resinas para manualidades y carpintería existe una confusión habitual: tratar la resina UV y la resina epoxi A+B como si fueran productos intercambiables. No lo son. Tienen química distinta, mecanismos de curado opuestos, y aplicaciones completamente diferentes. Usar la resina equivocada puede arruinar tu proyecto desde el principio.</p>
+
+<style>
+.bsrezn-card{border:2px solid #e2e8f0;border-radius:16px;overflow:hidden;margin:28px 0;background:#fff;box-shadow:0 4px 16px rgba(0,0,0,0.08);font-family:inherit}
+.bsrezn-header{background:#f8fafc;padding:10px 16px;border-bottom:1px solid #e2e8f0;display:flex;align-items:center;gap:8px}
+.bsrezn-badge{font-size:11px;font-weight:700;color:#92400e;background:#fef3c7;padding:3px 10px;border-radius:20px;border:1px solid #fde68a}
+.bsrezn-affiliate{font-size:11px;color:#9ca3af}
+.bsrezn-body{display:flex;flex-direction:row;align-items:stretch}
+.bsrezn-img-wrap{flex:0 0 160px;background:#f9fafb;border-right:1px solid #e2e8f0;display:flex;align-items:center;justify-content:center;padding:20px}
+.bsrezn-img-wrap img{max-width:120px;max-height:120px;object-fit:contain;display:block;margin:0 auto}
+.bsrezn-info{flex:1;padding:16px 20px;display:flex;flex-direction:column;gap:10px;min-width:0}
+.bsrezn-title{font-weight:700;color:#1a3a5c;font-size:15px;line-height:1.4;text-decoration:none;display:block}
+.bsrezn-stars{display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.bsrezn-features{display:flex;flex-direction:column;gap:5px;font-size:13px;color:#374151;margin:2px 0}
+.bsrezn-footer{display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:10px;padding-top:12px;border-top:1px solid #f1f5f9;margin-top:auto}
+.bsrezn-price-block{display:flex;flex-direction:column;gap:2px}
+.bsrezn-price{font-size:24px;font-weight:800;color:#111827;line-height:1}
+.bsrezn-price-sub{font-size:12px;color:#6b7280}
+.bsrezn-btn{display:inline-block;background:#f59e0b;color:#111827;font-weight:700;font-size:14px;padding:11px 24px;border-radius:9px;text-decoration:none;white-space:nowrap;text-align:center;transition:background .15s}
+@media(max-width:580px){
+  .bsrezn-body{flex-direction:column}
+  .bsrezn-img-wrap{flex:none;border-right:none;border-bottom:1px solid #e2e8f0;padding:20px}
+  .bsrezn-img-wrap img{max-width:140px;max-height:140px}
+  .bsrezn-footer{flex-direction:column;align-items:stretch}
+  .bsrezn-btn{width:100%;box-sizing:border-box;padding:13px 24px;font-size:15px}
+}
+</style>
+<div class="bsrezn-card">
+  <div class="bsrezn-header">
+    <span class="bsrezn-badge">★ PRODUCTO RECOMENDADO</span>
+    <span class="bsrezn-affiliate">Enlace de afiliado · Amazon.es</span>
+  </div>
+  <div class="bsrezn-body">
+    <a href="https://amzn.to/4sT4Z68" target="_blank" rel="noopener sponsored" class="bsrezn-img-wrap">
+      <img src="https://m.media-amazon.com/images/I/81J1fLcItrL._SL300_.jpg" alt="Bsrezn Resina UV transparente 4000g" loading="lazy" />
+    </a>
+    <div class="bsrezn-info">
+      <a href="https://amzn.to/4sT4Z68" target="_blank" rel="noopener sponsored" class="bsrezn-title">Bsrezn Resina UV Transparente — Kit 4000g (4 × 1 kg)</a>
+      <div class="bsrezn-stars">
+        <span style="color:#f59e0b;font-size:15px;letter-spacing:1px">★★★★★</span>
+        <span style="font-size:12px;color:#6b7280">4.5 / 5 · 2.333 valoraciones verificadas</span>
+      </div>
+      <div class="bsrezn-features">
+        <div>✓ Premezclada · sin necesidad de componente B</div>
+        <div>✓ Cura en 2–4 min bajo lámpara UV</div>
+        <div>✓ Viscosidad 2000 cps · autodesgaseificante</div>
+        <div>✓ Resistente al amarilleamiento · dureza 85D</div>
+        <div>✓ Kit completo: vasos, varillas, guantes y tapete</div>
+      </div>
+      <div class="bsrezn-footer">
+        <div class="bsrezn-price-block">
+          <span class="bsrezn-price">112,66€</span>
+          <span class="bsrezn-price-sub">formato 4 kg · mejor precio por gramo</span>
+        </div>
+        <a href="https://amzn.to/4sT4Z68" target="_blank" rel="noopener sponsored" class="bsrezn-btn">Ver en Amazon →</a>
+      </div>
+    </div>
+  </div>
+</div>
 <p>En este artículo te explicamos las diferencias reales entre ambas, para qué sirve cada una, y cuándo tiene sentido invertir en una resina UV de calidad como la <a href="https://amzn.to/4sT4Z68" target="_blank" rel="noopener sponsored">Bsrezn Resina UV 4000g</a> frente a una resina epoxi de dos componentes.</p>
 
 <h2>Cómo Cura Cada Resina: La Diferencia Fundamental</h2>
@@ -53,39 +111,6 @@ export const articles = [
 
 <h2>Análisis: Bsrezn Resina UV 4000g</h2>
 <p>Si tu proyecto es joyería DIY, manualidades o piezas pequeñas y buscas volumen con buena relación calidad-precio, la <a href="https://amzn.to/4sT4Z68" target="_blank" rel="noopener sponsored">Bsrezn Resina UV transparente 4000g</a> es una de las opciones más completas disponibles en Amazon.es.</p>
-
-<div style="border:2px solid #e5e7eb;border-radius:16px;overflow:hidden;margin:28px 0;background:#fff;display:flex;flex-direction:column;box-shadow:0 2px 12px rgba(0,0,0,0.07)">
-  <div style="background:#f8fafc;padding:12px 16px;border-bottom:1px solid #e5e7eb;display:flex;align-items:center;gap:8px">
-    <span style="font-size:11px;font-weight:700;color:#f90;background:#fff8e6;padding:3px 8px;border-radius:20px;border:1px solid #fde68a">★ PRODUCTO RECOMENDADO</span>
-    <span style="font-size:11px;color:#6b7280">Enlace de afiliado — Amazon.es</span>
-  </div>
-  <div style="display:flex;flex-direction:row;gap:0;align-items:stretch">
-    <a href="https://amzn.to/4sT4Z68" target="_blank" rel="noopener sponsored" style="flex-shrink:0;display:block;width:160px;min-height:160px;background:#f9fafb;display:flex;align-items:center;justify-content:center;padding:12px;border-right:1px solid #e5e7eb">
-      <img src="https://m.media-amazon.com/images/I/81J1fLcItrL._SL300_.jpg" alt="Bsrezn Resina UV transparente 4000g kit completo" style="max-width:138px;max-height:138px;object-fit:contain;display:block;margin:auto" loading="lazy" />
-    </a>
-    <div style="padding:16px 20px;flex:1;display:flex;flex-direction:column;gap:8px">
-      <a href="https://amzn.to/4sT4Z68" target="_blank" rel="noopener sponsored" style="font-weight:700;color:#1a3a5c;font-size:15px;line-height:1.4;text-decoration:none">Bsrezn Resina UV Transparente — Kit 4000g (4 × 1 kg)</a>
-      <div style="display:flex;align-items:center;gap:6px">
-        <span style="color:#f59e0b;font-size:15px">★★★★★</span>
-        <span style="font-size:13px;color:#6b7280">4.5/5 · 2.333 valoraciones</span>
-      </div>
-      <div style="margin:8px 0;display:flex;flex-direction:column;gap:5px;font-size:13px;color:#374151">
-        <div>✓ Premezclada · sin componente B</div>
-        <div>✓ Cura en 2–4 min bajo lámpara UV</div>
-        <div>✓ Viscosidad 2000 cps · autodesgaseificante</div>
-        <div>✓ Resistente al amarilleamiento · dureza 85D</div>
-        <div>✓ Incluye vasos, varillas, guantes y tapete</div>
-      </div>
-      <div style="display:flex;align-items:center;justify-content:space-between;margin-top:auto;padding-top:12px;border-top:1px solid #f3f4f6;flex-wrap:wrap;gap:8px">
-        <div>
-          <span style="font-size:22px;font-weight:800;color:#1a3a5c">112,66€</span>
-          <span style="font-size:12px;color:#6b7280;margin-left:6px">formato 4 kg · mejor precio/g</span>
-        </div>
-        <a href="https://amzn.to/4sT4Z68" target="_blank" rel="noopener sponsored" style="background:#f59e0b;color:#1a1a1a;font-weight:700;font-size:13px;padding:9px 18px;border-radius:8px;text-decoration:none;white-space:nowrap">Ver en Amazon →</a>
-      </div>
-    </div>
-  </div>
-</div>
 <p><strong>Qué incluye el kit:</strong> 4 botellas de 1000g (total 4 kg), 4 vasos de medición de 100 ml, 10 vasos de resina, varillas de agitación, guantes y tapete de silicona. Para la mayoría de proyectos de joyería, este kit es suficiente para decenas o cientos de piezas.</p>
 <p><strong>Características técnicas relevantes:</strong></p>
 <ul>
